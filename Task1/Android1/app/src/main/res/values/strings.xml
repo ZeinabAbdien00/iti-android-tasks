@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android-1</string>
+    <string name="roll_dice">Roll Dice</string>
+    <string name="shake_to_throw">Shake To Throw</string>
+</resources>
