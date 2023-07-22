@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/vg_linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="3">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_search"
+            android:tint="@color/gray" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints="name"
+            android:hint="@string/find_restaurants"
+            android:textSize="16sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/ic_filter_search" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_trend_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/trending_restaurants"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/vg_linear_search"
+        app:layout_constraintTop_toBottomOf="@id/vg_linear_search" />
+
+    <TextView
+        android:id="@+id/tv_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all (45)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_trend_res"
+        app:layout_constraintEnd_toEndOf="@id/vg_linear_search"
+        app:layout_constraintTop_toTopOf="@id/tv_trend_res" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_restaurant"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/vg_linear_search"
+        app:layout_constraintStart_toStartOf="@id/tv_trend_res"
+        app:layout_constraintTop_toBottomOf="@id/tv_trend_res"
+        tools:listitem="@layout/trend_restaurant_item" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/vg_linear_search"
+        app:layout_constraintTop_toBottomOf="@id/rv_restaurant" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_category"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/vg_linear_search"
+        app:layout_constraintStart_toStartOf="@id/tv_trend_res"
+        app:layout_constraintTop_toBottomOf="@id/tv_category"
+        tools:listitem="@layout/category_item" />
+
+    <TextView
+        android:id="@+id/tv_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="@string/friends"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/vg_linear_search"
+        app:layout_constraintTop_toBottomOf="@id/rv_category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_friends"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/vg_linear_search"
+        app:layout_constraintStart_toStartOf="@id/tv_trend_res"
+        app:layout_constraintTop_toBottomOf="@id/tv_friends" />
+</androidx.constraintlayout.widget.ConstraintLayout>

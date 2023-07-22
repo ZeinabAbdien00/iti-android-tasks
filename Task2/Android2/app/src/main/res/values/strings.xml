@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Android-2</string>
+    <string name="find_restaurants">Find Restaurants</string>
+    <string name="trending_restaurants">Trending Restaurants</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="happy_bones">Happy Bones</string>
+    <string name="uncle_boons">Uncle Boons</string>
+    <string name="italian">Italian</string>
+    <string name="chinese">Chinese</string>
+    <string name="maxican">Maxican</string>
+    <string name="category">Category</string>
+    <string name="friends">Friends</string>
+    <string name="address">394 Broome St, New York, NY 10013, USA</string>
+</resources>
