@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CityGuideFragment">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="City"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_city"
+        app:layout_constraintTop_toBottomOf="@id/tv_city" />
+
+    <TextView
+        android:id="@+id/tv_university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="University"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_city" />
+
+    <EditText
+        android:id="@+id/et_university"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_university"
+        app:layout_constraintTop_toBottomOf="@id/tv_university" />
+
+    <TextView
+        android:id="@+id/tv_near_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Near by"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_university" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="@id/et_university"
+        app:layout_constraintTop_toTopOf="@id/tv_near_by" />
+
+    <CheckBox
+        android:id="@+id/cb_gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Gas Station"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_near_by"
+        app:layout_constraintTop_toBottomOf="@id/tv_near_by" />
+
+    <CheckBox
+        android:id="@+id/cb_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Coffee"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_near_by"
+        app:layout_constraintTop_toBottomOf="@id/cb_gas" />
+
+    <CheckBox
+        android:id="@+id/cb_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Restaurants"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_near_by"
+        app:layout_constraintTop_toBottomOf="@id/cb_coffee" />
+
+    <CheckBox
+        android:id="@+id/cb_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Hotels"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_near_by"
+        app:layout_constraintTop_toBottomOf="@id/cb_restaurant" />
+
+    <CheckBox
+        android:id="@+id/cb_groceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Groceries"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/cb_pharmacies"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_near_by" />
+
+    <CheckBox
+        android:id="@+id/cb_pharmacies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Pharmacies"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/spinner"
+        app:layout_constraintTop_toBottomOf="@id/cb_groceries" />
+
+    <CheckBox
+        android:id="@+id/cb_gym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gym"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/cb_pharmacies"
+        app:layout_constraintTop_toBottomOf="@id/cb_pharmacies" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
