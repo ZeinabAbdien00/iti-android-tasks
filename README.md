@@ -6,6 +6,6 @@
 
 ### Task 3  -> Buy Donut Screen
 
-### Task 4
+### Task 4  -> Tab and View Pager
 
-### Task 5
+### Task 5  -> Retrofit with View Pager and Navigation
