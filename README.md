@@ -9,3 +9,7 @@
 ### Task 4  -> Tab and View Pager
 
 ### Task 5  -> Retrofit with View Pager and Navigation
+
+### Task 6  -> Change Fragment background with View Model
+
+### Task 5  -> Room Database
